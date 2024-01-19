@@ -15,11 +15,6 @@
         <name>01. Arrays and Lists</name>
 
         <dependencies>
-                <dependency>
-                        <groupId>info.picocli</groupId>
-                        <artifactId>picocli</artifactId>
-                </dependency>
-
                 <!-- apache -->
                 <dependency>
                         <groupId>org.apache.commons</groupId>
