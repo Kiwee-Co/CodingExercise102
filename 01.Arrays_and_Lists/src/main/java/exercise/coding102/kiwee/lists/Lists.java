@@ -2,6 +2,8 @@ package exercise.coding102.kiwee.lists;
 
 import org.apache.commons.lang3.ArrayUtils;
 
+import exercise.coding102.kiwee.shared.datastructure.Node;
+
 public class Lists {
 
     public static void main(String[] args) {

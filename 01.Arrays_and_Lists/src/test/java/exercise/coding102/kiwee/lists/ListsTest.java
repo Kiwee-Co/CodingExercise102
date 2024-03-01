@@ -11,6 +11,8 @@ import java.util.stream.IntStream;
 
 import org.junit.jupiter.api.Test;
 
+import exercise.coding102.kiwee.shared.datastructure.Node;
+
 class ListsTest {
 
     @Test

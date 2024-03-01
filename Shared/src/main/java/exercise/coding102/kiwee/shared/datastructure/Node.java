@@ -1,4 +1,4 @@
-package exercise.coding102.kiwee.lists;
+package exercise.coding102.kiwee.shared.datastructure;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
