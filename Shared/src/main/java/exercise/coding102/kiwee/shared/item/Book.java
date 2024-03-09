@@ -13,5 +13,4 @@ public class Book extends Media {
     public String getAuthor() {
         return this.getAuthor();
     }
-    
 }
