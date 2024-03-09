@@ -43,11 +43,12 @@ public class Trees {
     public static TreeNode<String> getDefaultTree() {
 
         TreeNode<String> root = new TreeNode<>("root");
-        root.withLeft("left").withLeft("left -> left").withLeft("left -> left -> left");
+        root.withLeft("left").withLeft("left -> left").withLeft("left -> left -> left").withRight("left -> left -> left -> right");
         root.getLeft().withRight("left -> right").withLeft("left -> right -> left");
 
         root.withRight("right").withRight("right -> right").withRight("right -> right -> right");
         root.getRight().withLeft("right -> left").withRight("right -> left -> right");
+        root.getRight().getRight().withLeft("right -> right -> left").withRight("right -> right -> left -> right");
 
         return root;
     }
