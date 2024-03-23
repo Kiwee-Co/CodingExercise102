@@ -1,5 +1,7 @@
 package exercise.coding102.kiwee.shared.datastructure;
 
+import java.util.LinkedList;
+
 public class TreeNode<T> {
 
     private T data;
@@ -31,7 +33,7 @@ public class TreeNode<T> {
         setLeft(left);
         return left;
     }
-    
+
     public TreeNode<T> withLeft(T left) {
         return withLeft(new TreeNode<>(left));
     }
@@ -44,8 +46,45 @@ public class TreeNode<T> {
     public TreeNode<T> withRight(T right) {
         return withRight(new TreeNode<>(right));
     }
-    
+
     public T getData() {
         return data;
     }
+
+    public String toString() {
+        return data.toString();
+    }
+    
+    public static TreeNode<String> createBalancedTree(int levels) {
+        if (levels <= 0) {
+            return null;
+        }
+
+        var root = new TreeNode<>("root");
+
+        if( levels ==1) {
+            return root;
+        }
+        
+        var currentLevel = 1;
+        var queue = new LinkedList<TreeNode<String>>();
+        var levelQueue = new LinkedList<TreeNode<String>>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            var node = queue.pop();
+            
+            levelQueue.add(node.withLeft(node.getData() + " -> L"));
+            levelQueue.add(node.withRight(node.getData() + " -> R"));
+            
+            if (queue.isEmpty() && !levelQueue.isEmpty() && currentLevel < levels-1) {
+                queue = levelQueue;
+                levelQueue = new LinkedList<TreeNode<String>>();
+                currentLevel++;
+            }
+        }
+
+        return root;
+    }
+
 }
