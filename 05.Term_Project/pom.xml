@@ -9,10 +9,10 @@
                 <version>0.0.1-SNAPSHOT</version>
         </parent>
 
-        <artifactId>06.Term_Project</artifactId>
+        <artifactId>05.Term_Project</artifactId>
         <packaging>jar</packaging>
 
-        <name>06. Term Project</name>
+        <name>05. Term Project</name>
 
         <dependencies>
                 <dependency>

@@ -9,10 +9,10 @@
                 <version>0.0.1-SNAPSHOT</version>
         </parent>
 
-        <artifactId>05.Hashing_and_Maps</artifactId>
+        <artifactId>04.Hashing_and_Maps</artifactId>
         <packaging>jar</packaging>
 
-        <name>05. Hashing and Maps</name>
+        <name>04. Hashing and Maps</name>
 
         <dependencies>
                 <dependency>

@@ -7,10 +7,10 @@ public class Book extends Media {
     }
 
     public String getBookName() {
-        return this.getTitle();
+        return super.getTitle();
     }
     
     public String getAuthor() {
-        return this.getAuthor();
+        return super.getAuthor();
     }
 }
