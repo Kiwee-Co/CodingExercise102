@@ -148,8 +148,7 @@
 		<module>01.Arrays_and_Lists</module>
 		<module>02.Stacks_and_Queues</module>
 		<module>03.Trees</module>
-		<module>04.Graphs</module>
-		<module>05.Hashing_and_Maps</module>
-		<module>06.Term_Project</module>
+		<module>04.Hashing_and_Maps</module>
+		<module>05.Term_Project</module>
 	</modules>
 </project>
