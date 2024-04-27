@@ -12,18 +12,7 @@ public final class Math {
     }
 
     public static int findProperNumber(int current, int divisor, int remainder) {
-        int v = current;
-        int count = 1;
-
-        while (v % divisor != remainder && count < divisor) {
-            v = current * (++count);
-        }
-
-        if (count == divisor) {
-            return -1;
-        }
-
-        return v;
+        return -1;
     }
 
     public static int product(Set<Integer> set) {
@@ -31,13 +20,7 @@ public final class Math {
     }
 
     public static int product(int... arr) {
-        int i = 1;
-
-        for (int n : arr) {
-            i = i * n;
-        }
-
-        return i;
+        return -1;
     }
 
     public static int gcd(Set<Integer> set) {
@@ -58,11 +41,7 @@ public final class Math {
     }
 
     public static int gcd(int a, int b) {
-        if (b == 0) {
-            return a;
-        }
-
-        return gcd(b, a % b);
+        return -1;
     }
 
     public static int lcm(Set<Integer> set) {
@@ -70,24 +49,11 @@ public final class Math {
     }
 
     public static int lcm(int... arr) {
-        if (arr.length == 0) {
-            throw new IllegalArgumentException("At least one int must be provided.");
-        }
-
-        int result = arr[0];
-
-        for (int i = 1; i < arr.length; i++) {
-            result = lcm(result, arr[i]);
-        }
-
-        return result;
+        return -1;
     }
 
     public static int lcm(int a, int b) {
-        int product = a * b;
-        int gcd = gcd(a, b);
-
-        return product / gcd;
+        return -1;
     }
 
 }
